@@ -1,6 +1,6 @@
 @media screen and (max-width: 500px) {
   :root {
-    --main-color: rgb(56, 0, 56);
+    --main-color:  #0A1828;
     --header-color: rgb(226, 226, 28);
     --paragraph-color: rgb(192, 190, 190);
     --button-img: linear-gradient(rgb(255, 255, 0), rgb(255, 138, 5));
