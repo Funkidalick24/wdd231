@@ -328,3 +328,19 @@ footer p {
 #lastmodified {
   color: yellow;
 }
+
+.showimg{
+  height: 400px;
+  width: auto;
+  padding: 1rem;
+}
+.calendare{
+  border: none;
+  height: 600px;
+  width: 400px;
+}
+aside{
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+}
