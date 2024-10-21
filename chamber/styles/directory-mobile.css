@@ -112,3 +112,9 @@
     place-items: first baseline;
   }
 }
+iframe{
+  border: 0;
+  width: 800px;
+  height: 600px;
+            
+}
