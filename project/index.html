@@ -1,203 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CASHLIBS - RECORDING STUDIO</title>
-    <link class="nav-link" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <meta
+  name="description"
+  content="Studio Home by Farai Confidence Dandara"
+/>
+<meta name="author" content="Farai Confidence Dandara" />
+
+<!--  Essential META Tags -->
+<meta property="og:title" content="Studio Home page" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/images/main-bg.png" />
+<meta
+  property="og:url"
+  content="https://funkidalick24.github.io/wdd321/project/index.html"
+/>
+<!-- *** Call to Action *** -->
+<meta name="twitter:card" content="summary_large_image" />
+
+<!--  Non-Essential, But Recommended -->
+<meta
+  property="og:description"
+  content="Cashlibs City Music"
+/>
+<meta property="og:site_name" content="Funkidalick24" />
+<meta
+  name="twitter:image:alt"
+  content="Team City Music"
+/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/home.css">
+<script src="scripts/main.js" defer></script>
+  <title>Cashlibs City Music</title>
 </head>
 <body>
+  <nav>
+    <a href="index.html"><img src="images/logo.svg" alt="Company logo"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="bookings.html">Bookings</a></li>
+    </ul>
+    <div class="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+  
+  </nav>
 
-    <!-- NAV-SECTION CONTENT START HERE -->
-    <nav class="navbar navbar-expand-lg navbar-dark w-100 my-nav">
-          <a class="navbar-brand" href="#">
-            <img src="images/logo.svg" alt="logo" loading="lazy">
-        </a>
-        <span class="logo-text">
-            <span>CASHLIBS</span>
-        
-            <span>RECORDING STUDIO</span>
-        </span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#home">HOME<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">CONTACTS</a>
-            </li>
-          </ul>
-        
-        </div>
-      </nav>
-      <!-- NAV-SECTION CONTENT END HERE -->
-
-      <div class="top-section d-flex align-items-center" id="home">
-        <div class="container d-flex justify-content-center">
-            <div class="headline text-center">
-                <h1>WE CAN RECORD</h1>
-                <h1>Anything</h1>
-                <button class="btn btn-danger btn-lg">know more</button>
-            </div>
-        </div>
+ <main>
+  <section id="hero">
+    <picture>
+        <source media="(max-width: 500px)" srcset="images/hero.webp" />
+        <source media="(min-width: 501px) and (max-width: 1200px)" srcset="images/hero.webp" />
+        <source media="(min-width: 1201px)" srcset="images/hero.webp" />
+        <img src="images/hero.webp" alt="Hero image" loading="lazy"/>
+    </picture>
+    <div class="hero-content">
+        <h1>Welcome to <strong>Cashlibs City Music</strong></h1>
+        <h2>We aim to serve as a creative sanctuary where artists, musicians, and producers capture, refine, and immortalize their sonic expressions. It’s a space where melodies, harmonies, and rhythms intertwine, giving birth to timeless compositions.</h2>
+        <a href="#contact" class="cta-button">Book A Session</a>
     </div>
+</section>
 
-    <div class="section-2 container d-flex align-items-center">
-        <div class="row d-flex align-items-center">
-            <div class="col-md-6 text-center">
-                <h4>Welcome to Cashlibs</h4>
-                <h4>The Cashlibs is the brainchild of musicians who understand that the best art comesfrom the best environment</h4>
-                <p>They know that to make great music, you need great surroundings — a combination of top-notch gear, comfortable work and lounge areas, a relaxing setting, and knowledgeable, capable staff who can work with artists of any level. A place without distractions, yet accessible, where development is encouraged and prices aren’t prohibitive, but quality is never sacrificed and clients are treated with respect.</p>
-                <img src="images/sign.png" alt=""  class="sign" loading="lazy">
-            </div>
-            <div class="col-md-6">
-                <img class="text-block-video-1" id="videoImage" src="images/321104798_839333530505329_3644603490379534327_n.jpg" alt="" loading="lazy">
-            </div>
-        </div>
+  <section id="clientTestimonials">
+    <div class="testimonial">
+        <img src="images/273632618_4887887854625852_3622293801528718570_n.jpg" alt="Client 1">
+        <h2>Nutty O</h2>
+        <p>"Great service! Highly recommend this business."</p>
     </div>
-
-    <div class="section-3 " id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 d-flex justify-content-center">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active text-center p-3">
-                            <div style="height: 100%;" class="d-flex align-items-center">
-                                <div class="carousel-content">
-                                    <h1>What Cashlibs</h1>
-                                    <h1>Customers Say</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dignissimos doloremque quam hic porro assumenda voluptates officiis, obcaecati iure maxime quaerat! Minima quis magnam accusamus amet natus? Beatae, nisi ipsam.</p>
-                                    <p class="author">- Nutty o</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item  text-center p-3">
-                            <div style="height: 100%;" class="d-flex align-items-center">
-                                <div class="carousel-content">
-                                    <h1>What Cashlibs</h1>
-                                    <h1>Customers Say</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dignissimos doloremque quam hic porro assumenda voluptates officiis, obcaecati iure maxime quaerat! Minima quis magnam accusamus amet natus? Beatae, nisi ipsam.</p>
-                                    <p class="author">- Seh Calaz</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item text-center p-3">
-                            <div style="height: 100%;" class="d-flex align-items-center">
-                                <div class="carousel-content">
-                                    <h1>What Cashlibs</h1>
-                                    <h1>Customers Say</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dignissimos doloremque quam hic porro assumenda voluptates officiis, obcaecati iure maxime quaerat! Minima quis magnam accusamus amet natus? Beatae, nisi ipsam.</p>
-                                    <p class="author">- Freeman</p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                      </div>
-                </div>
-                <div class="col-md-6 d-flex justify-content-center">
-                    <img src="images/273632618_4887887854625852_3622293801528718570_n.jpg" class="rounded-circle p-5" alt="" loading="lazy">
-                </div>
-            </div>
-        </div>
-      </div>
-
-        <div class="section-4 container" id="contact">
-          <div class="info d-flex align-items-center justify-content-center">
-            <div class="text-center">
-              <h1>Booking</h1>
-              <p>Select your session and book online instantly. If you have any questions, <br> you give us a call or email us</p>
-            </div>
-          </div>
-          <div class="package">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="pack">
-                  <h4> Book Video Session</h4>
-                  <p class="text-center">from <span class="amount">$105/hour</span></p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="pack">
-                  <h4> Book Engineer Session</h4>
-                  <p class="text-center">from <span class="amount">$95/hour</span></p>
-                </div>
-              </div>
-             
-              </div>
-            </div>
-          </div>
-        
+    <div class="testimonial">
+        <img src="images/321104798_839333530505329_3644603490379534327_n.jpg" alt="Client 2">
+        <h2>Seh Calaz</h2>
+        <p>"Excellent support and fantastic results."</p>
+    </div>
+    <div class="testimonial">
+      <img src="images/freeman.jpg" alt="Client 3">
+      <h2>Freeman</h2>
+      <p>"Professional and reliable, will definitely return."</p>
+  </div>
     
+</section>
 
-   <footer>
-     <div class="container">
-       
-    <div class="d-flex justify-content-center p-5">
-      <div class="logo">
-        <a class="navbar-brand" href="#">
-          <img src="images/logo.svg" alt="logo" loading="lazy">
-          </a>
-        <span class="logo-text">
-          <span>CASHLIBS</span>
-      
-          <span>RECORDING STUDIO</span>
-      </span>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 text-white">
-        <div class="address">
-          <h4>Cashlibs Studio Recording</h4>
-          <p>3976 5th Street Dzivarasekwa</p>
-          <p>Harare, Zimbabwe</p>
-        </div>
-      </div>
-      </div>
-    </div>
-     <div class="row d-flex justify-content-center mt-5">
-       <ul class="d-flex social">
-         <li><a href="https://www.facebook.com/cleopas.dandara"><i class="fa fa-facebook"></i></a></li>
-         <li><a href="https://www.youtube.com/@cashlibscity3365"><i class="fa fa-youtube"></i></a></li>
-         <li><a href="https://www.instagram.com/cashlibs_city/"><i class="fa fa-instagram"></i></a></li>
-       </ul>
-     </div>
-     <div class="row copyright mt-5">
-       <ul class="mx-auto text-center">
-         <li><p>© 2024 Cashlibs Recording Studio. All Rights Reserved.</p></li>
-         <li> <p>©<span id="currentyear"></span> 🏀 Farai Dandara 🏀 Harare Zimbabwe</p>
-          <p>Last Modified: <span id="lastModified"></span></p></li>
-       </ul>
+<button id="scrollToTopBtn" class="scrollToTopBtn">Top</button>
 
-     </div>
-   </footer>
-   <script src="scripts/main.js" defer></script>
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ </main>
+  
 </body>
 </html>

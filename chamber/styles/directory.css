@@ -329,18 +329,42 @@ footer p {
   color: yellow;
 }
 
-.showimg{
-  height: 400px;
-  width: auto;
-  padding: 1rem;
-}
+
 .calendare{
   border: none;
   height: 600px;
   width: 400px;
 }
-aside{
-  display: flex;
-  flex-direction: row;
-  flex-basis: auto;
+
+.intrestgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  justify-content: center;
+}
+
+.into {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  justify-content: center;
+}
+.showimg:hover {
+  transform: scale(1.1);
+}
+
+.showimg {
+  width: 100%;
+  height: auto;
+  display: block;
+  justify-items: center;
+  
+    transition: transform 0.3s 
+}
+
+p {
+  padding: 16px;
+  color: #333;
 }
