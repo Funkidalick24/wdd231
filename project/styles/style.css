@@ -6,7 +6,7 @@ body, ul, li, a, img {
 }
 
 nav {
-    background-color: #050505; /* Primary */
+    background-color: #050505 50%; /* Primary */
     display: flex;
     justify-content: space-between;
     align-items: center;
