@@ -69,11 +69,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align:start;
+    text-align:center;
     color: #f1f7ee;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
+    font: 200;
 }
 
 .hero-content h1 {
