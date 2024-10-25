@@ -1,92 +1,60 @@
-/* General styling */
-body, ul, li, a, img {
+/* Reset and normalize */
+body, h1, h2, p, ul, li, a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation styles */
 nav {
-    background-color: #050505 50%; /* Primary */
+    background-color: #050505; /* Primary */
+    color: #f1f7ee; /* Secondary */
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
 }
 
 nav img {
     height: 40px;
 }
 
-.nav-links {
+nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.nav-links li a {
-    text-decoration: none;
+nav ul li a {
     color: #f1f7ee; /* Secondary */
-    padding: 10px;
+    text-decoration: none;
+    padding: 10px 15px;
     background-color: #4e878c; /* Accent 1 */
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-.nav-links li a:hover {
+nav ul li a:hover {
     background-color: #a05481; /* Accent 2 */
 }
 
-.burger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: #f1f7ee; /* Secondary */
-}
-
-/* Responsive styling */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #050505; /* Primary */
-        align-items: center;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .burger {
-        display: flex;
-    }
-
-    .nav-links li a {
-        width: 100%;
-        text-align: center;
-        padding: 15px;
-    }
-}
-
-/* Other styles */
+/* Hero section styles */
 #hero {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
     overflow: hidden;
+    margin-top: 80px; /* Adjust if needed */
 }
 
 #hero picture,
@@ -105,23 +73,25 @@ nav img {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #f1f7ee;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: #f1f7ee; /* Secondary */
+    background-color: rgba(5, 5, 5, 0.5); /* Primary with transparency */
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .hero-content h1 {
     font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.hero-content p {
+.hero-content h2 {
     font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 .cta-button {
-    color: #f1f7ee;
-    background-color: #4e878c;
+    color: #f1f7ee; /* Secondary */
+    background-color: #4e878c; /* Accent 1 */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -129,17 +99,57 @@ nav img {
 }
 
 .cta-button:hover {
-    background-color: #a05481;
+    background-color: #a05481; /* Accent 2 */
 }
 
+/* Testimonial section styles */
+#clientTestimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f7ee; /* Secondary */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonial img {
+    width: 80px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.testimonial h2 {
+    font-size: 1.2em; /* Adjust font size as needed */
+    color: #050505; /* Primary color for text */
+    margin-bottom: 10px;
+    text-align: center; /* Center text */
+}
+
+.testimonial p {
+    font-size: 1em; /* Adjust font size as needed */
+    color: #050505; /* Primary color for text */
+    text-align: center; /* Center text */
+}
+
+/* Scroll to top button styles */
 .scrollToTopBtn {
-    display: none;
+    display: none; /* Hidden by default */
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 100;
-    background-color: #4e878c;
-    color: #f1f7ee;
+    z-index: 100; /* Make sure it stays above other content */
+    background-color: #4e878c; /* Accent 1 */
+    color: #f1f7ee; /* Secondary */
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -149,93 +159,24 @@ nav img {
 }
 
 .scrollToTopBtn:hover {
-    background-color: #a05481;
+    background-color: #a05481; /* Accent 2 */
 }
 
-#clientTestimonials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-    position: relative;
-    overflow: hidden;
-}
-
-.testimonial {
-    display: flex;
-    align-items: center;
-    background-color: #a05481;
-    opacity: 50%;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    margin-right: 20px;
-}
-
-.testimonial h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 1.5em;
-    color: #050505;
-}
-
-.testimonial p {
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
-    color: #050505;
-}
-
-.testimonial div {
-    display: flex;
-    flex-direction: row;
-}
-
-.testimonial div h2 {
-    margin-bottom: 10px;
-}
-
-/* Mobile-specific styles */
+/* Media query for mobile view */
 @media (max-width: 768px) {
+    .testimonial {
+        flex-direction: column;
+    }
+
+    .testimonial img {
+        margin-bottom: 10px;
+    }
+
     nav ul {
         flex-direction: column;
-        gap: 10px;
     }
 
     nav ul li {
         margin-bottom: 10px;
-    }
-
-    .hero-content {
-        padding: 20px 10px;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .testimonial {
-        padding: 15px;
-    }
-
-    .testimonial img {
-        width: 60px;
-        margin-bottom: 10px;
-    }
-
-    .scrollToTopBtn {
-        padding: 8px 12px;
-        font-size: 16px;
     }
 }
