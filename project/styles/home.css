@@ -96,7 +96,7 @@
     transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
+.cta-button::after {
     background-color: #a05481;
 }
 
