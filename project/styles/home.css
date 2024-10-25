@@ -18,6 +18,7 @@
 
 #menu-toggle:checked + .burger + .nav-links {
     display: flex;
+    justify-content: space-around;
 }
 
 /* Responsive styling */
@@ -35,6 +36,7 @@
 
     .burger {
         display: flex;
+        flex-basis: auto;
     }
 
     .nav-links li a {
@@ -67,7 +69,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align:start;
     color: #f1f7ee;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
