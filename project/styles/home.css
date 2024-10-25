@@ -36,7 +36,8 @@
 
     .burger {
         display: flex;
-        flex-basis: auto;
+        flex-basis: end;
+        padding-right: 40px;
     }
 
     .nav-links li a {
