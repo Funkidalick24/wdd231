@@ -1,51 +1,91 @@
+/* General styling */
+body, ul, li, a, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
-    background-color: #050505 ;
-    color: #f1f7ee;
-    padding: 20px;
+    background-color: #050505; /* Primary */
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 100;
-    width: 95%;
 }
 
 nav img {
     height: 40px;
 }
 
-nav ul {
+.nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
-    margin: 0;
-    padding: 0;
 }
 
-nav ul li {
-    width: auto;
-    margin: 0;
-    padding: 0;
-    
-}
-
-nav ul li a {
-    
-    color: #f1f7ee;
+.nav-links li a {
     text-decoration: none;
-    padding: 10px 15px;
-    background-color: #4e878c;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
+    color: #f1f7ee; /* Secondary */
+    padding: 10px;
+    background-color: #4e878c; /* Accent 1 */
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: #a05481;
+.nav-links li a:hover {
+    background-color: #a05481; /* Accent 2 */
 }
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #f1f7ee; /* Secondary */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #050505; /* Primary */
+        align-items: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-links li a {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+/* Other styles */
 #hero {
     position: relative;
     width: 100%;
-    height: 100vh; /* Adjust if needed */
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -56,7 +96,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire section */
+    object-fit: cover;
 }
 
 .hero-content {
@@ -66,22 +106,22 @@ nav ul li a:hover {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #f1f7ee;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional background for better text readability */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
 }
 
 .hero-content h1 {
-    font-size: 2.5rem; /* Adjust as needed */
+    font-size: 2.5rem;
 }
 
 .hero-content p {
-    font-size: 1.2rem; /* Adjust as needed */
+    font-size: 1.2rem;
 }
 
 .cta-button {
-    color: #f1f7ee; /* Secondary */
-    background-color: #4e878c; /* Accent 1 */
+    color: #f1f7ee;
+    background-color: #4e878c;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -89,15 +129,15 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #a05481; /* Accent 2 */
+    background-color: #a05481;
 }
 
 .scrollToTopBtn {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 100; /* Make sure it stays above other content */
+    z-index: 100;
     background-color: #4e878c;
     color: #f1f7ee;
     border: none;
@@ -112,7 +152,6 @@ nav ul li a:hover {
     background-color: #a05481;
 }
 
-
 #clientTestimonials {
     display: flex;
     flex-direction: column;
@@ -126,33 +165,32 @@ nav ul li a:hover {
 .testimonial {
     display: flex;
     align-items: center;
-    background-color:#a05481;
-    opacity: 50%; /* Secondary color for background */
+    background-color: #a05481;
+    opacity: 50%;
     padding: 20px;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial img {
-    width: 200px; /* Adjust the width as needed */
+    width: 200px;
     height: auto;
-    border-radius: 10px; /* Rounded corners */
-    margin-right: 20px; /* Space between image and text */
+    border-radius: 10px;
+    margin-right: 20px;
 }
 
 .testimonial h2 {
     margin: 0;
     padding: 0;
-    font-size: 1.5em; /* Adjust font size as needed */
-    color: #050505; /* Primary color for text */
+    font-size: 1.5em;
+    color: #050505;
 }
 
 .testimonial p {
     margin: 0;
     padding: 0;
-    font-size: 1em; /* Adjust font size as needed */
-    color: #050505; /* Primary color for text */
+    font-size: 1em;
+    color: #050505;
 }
 
 .testimonial div {
@@ -161,5 +199,43 @@ nav ul li a:hover {
 }
 
 .testimonial div h2 {
-    margin-bottom: 10px; /* Space between name and testimony */
+    margin-bottom: 10px;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .hero-content {
+        padding: 20px 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .testimonial {
+        padding: 15px;
+    }
+
+    .testimonial img {
+        width: 60px;
+        margin-bottom: 10px;
+    }
+
+    .scrollToTopBtn {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
 }
