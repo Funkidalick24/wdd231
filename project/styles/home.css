@@ -33,6 +33,7 @@
         background-color: #050505; /* Primary */
         align-items: center;
         justify-content: space-around;
+        padding: 12px;
     }
 
     .burger {
