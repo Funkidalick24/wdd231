@@ -70,12 +70,12 @@
 }
 
 .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     animation-delay: 0s;
 }
 
 .hero-content h2 {
-    font-size: 1rem;
+    font-size: .75rem;
     animation-delay: 1.5s; /* Delay to ensure h1 scrolls first */
 }
 
