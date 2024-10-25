@@ -32,6 +32,7 @@
         left: 0;
         background-color: #050505; /* Primary */
         align-items: center;
+        justify-content: space-around;
     }
 
     .burger {
