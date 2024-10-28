@@ -230,12 +230,20 @@ nav ul li a:hover {
         width: calc(50% - 20px); /* Two per row with gap */
         height: 150px;
     }
+    
+    .service-text {
+        opacity: 1; /* Automatically show text on mobile */
+    }
 }
 
 @media (max-width: 480px) {
     .service {
         width: 100%; /* Full width on small screens */
         height: 150px;
+        
+    .service-text {
+        opacity: 1; /* Automatically show text on mobile */
+    }
     }
 }
 
