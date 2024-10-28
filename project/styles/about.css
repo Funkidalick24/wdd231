@@ -105,8 +105,10 @@ nav ul li a:hover {
 
 /* Meet the Producer Section */
 .meet-the-producer {
-    display: flex;
-    height:40% ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img div";
+    height:70% ;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -121,20 +123,21 @@ nav ul li a:hover {
 }
 
 .producer-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
+    width: 100%;
+    height: 100%;
     animation: slideInFromLeft 1s ease forwards;
+    left: 100px;
     
-    order: 2;
 }
 
 .producer-info {
+    background-color: rgba(0, 0, 0, 0.5);
     color: #f1f7ee;
     animation: slideInFromRight 1.5s ease forwards;
-   
-    order: 1;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas: "img div";
+   right: 100px;
 }
 
 @keyframes slideInFromLeft {
@@ -266,4 +269,64 @@ nav ul li a:hover {
 .scrollToTopBtn:hover {
     background-color: #a05481; /* Accent 2 */
 }
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
 
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    color: #050505;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mobile-only {
+    display: none;
+}
+
+/* Show modal button only on mobile */
+@media (max-width: 768px) {
+    .mobile-only {
+        display: block;
+    }
+
+    .meet-the-producer {
+        display: none; /* Hide the section on mobile */
+    }
+
+
+}
+footer {
+    gap: 20px;
+    place-items: first baseline;
+  }
+  footer img{
+    width: 40px;
+  }

@@ -37,7 +37,7 @@
 <link rel="icon" href="favicon.ico">
 <link rel="stylesheet" href="styles/about.css">
 <link rel="stylesheet" href="styles/home.css">
-<script src="scripts/main.js" defer></script>
+
   <title>Cashlibs City Music</title>
 </head>
 <body>
@@ -46,9 +46,10 @@
     
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="burger">
-        <div></div>
-        <div></div>
-        <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    
         </label>
     
     <ul class="nav-links">
@@ -70,24 +71,63 @@
     </picture>
     <div class="meet-the-producer">
       <img src="images/producer.jpg" alt="Producer" class="producer-img">
-    </div>
-    <div class="meet-the-producer">
-      
-      <div class="producer-info">
-          <h3>Meet the Producer</h3>
+      <fieldset class="producer-info">
+          <legend>Meet the Producer</legend>
+          
           <p><strong>Name:</strong> Cashlibs Funkidalick</p>
           <p>Cleopas Dandara AKA Cashlibs Funkidalick has been producing music for over 15 years, working with top artists to create chart-topping hits. His passion for music and dedication to his craft make him an invaluable asset to Cashlibs City Music.</p>
-     </div>
+      </fieldset>
     </div>
-  
+    
+    <button id="producerModalBtn" class="cta-button mobile-only">Meet the Producer</button>
 </section>
+
+<!-- Modal Structure -->
+<div id="producerModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <img src="images/producer.jpg" alt="Producer" class="producer-img">
+        <div class="producer-info">
+            <h3>Meet the Producer</h3>
+            <p><strong>Name:</strong> Cashlibs Funkidalick</p>
+            <p>Cleopas Dandara AKA Cashlibs Funkidalick has been producing music for over 15 years, working with top artists to create chart-topping hits. His passion for music and dedication to his craft make him an invaluable asset to Cashlibs City Music.</p>
+        </div>
+      </div>    
+</div>
 <h1>Our Services</h1>
-        <section id="services"></section>
+        <section id="services">
+
+        </section>
 
 
 <button id="scrollToTopBtn" class="scrollToTopBtn">⬆</button>
 
  </main>
+ <footer>
   
+  <section id="social">
+    <a href="https://www.facebook.com/"
+      ><img
+        src="images/facebook.png"
+        alt="facebook Icon by Rakib Hassan Rahim"
+    /></a>
+    <a href="https://www.linkedin.com/in/panasheGonese1"
+      ><img
+        src="images/linkedin.png"
+        alt="linkedin Icon by Rakib Hassan Rahim"
+    /></a>
+    <a href="https://x.com/?lang=en"
+      ><img src="images/twitter.png" alt="twitter Icon by Freepik"
+    /></a>
+  </section>
+  <section id="miei">
+    <p>WDD231 Class Project</p>
+    <p>Farai Confidence Dandara</p>
+    <p>&copy;<span id="full-date"></span> Cashlibs City Music</p>
+    <p id="lastmodified"></p>
+  </section>
+</footer>
 </body>
+<script src="scripts/about.js" defer></script>
+<script src="scripts/getdates.js" defer></script>
 </html>
