@@ -1,3 +1,58 @@
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #f1f7ee;
+    
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(5, 5, 5)
+}
+
+/* Navigation styles */
+nav {
+    background-color: #050505; /* Primary */
+    color: #a05481; /* Secondary */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color:#a05481; /* Secondary */
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color: #4e878c 10% ; /* Accent 1 */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #a05481;
+    color:aliceblue;/* Accent 2 */
+}
+
+/* Hero section styles */
+/* General styles */
 #hero {
     position: relative;
     width: 100%;
@@ -48,38 +103,70 @@
     background-color: #a05481;
 }
 
+/* Meet the Producer Section */
 .meet-the-producer {
-    display: flex;
+    display: grid;
+    grid-template-areas: "img div";
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
-    position: absolute;
+    position: relative;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    animation: slideIn 2s ease forwards;
+    animation: slideInProducer 2s ease forwards;
+    width: 100%;
 }
 
 .producer-img {
     width: 150px;
     height: 150px;
-    border-radius: 100%;
+    border-radius: 50%;
     margin-right: 20px;
+    animation: slideInFromLeft 1s ease forwards;
+    position: absolute;
+    order: 2;
 }
 
 .producer-info {
     color: #f1f7ee;
+    animation: slideInFromRight 1.5s ease forwards;
+    position: absolute;
+    order: 1;
 }
 
-@keyframes slideIn {
+@keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);
         opacity: 0;
     }
     100% {
         transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInProducer {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-50%);
         opacity: 1;
     }
 }
@@ -93,5 +180,9 @@
     .producer-img {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    .producer-info {
+        text-align: center;
     }
 }
