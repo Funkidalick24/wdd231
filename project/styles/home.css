@@ -117,4 +117,43 @@
 h1{
     align-items: center;
 }
+footer {
+    gap: 20px;
+    place-items: first baseline;
+  }
+  footer img{
+    width: 40px;
+  }
+  #prevBtn {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+#nextBtn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navBtn{
+    background-color: #a05481;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #f1f7ee;
+}
+
+}
+footer{
+    background-color: #050505;
+    color: #f1f7ee;
+}
+footer img{
+    background-color: #f1f7ee;
+    padding: 5px 10px;
+}
+
+
+
