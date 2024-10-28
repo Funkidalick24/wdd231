@@ -186,3 +186,56 @@ nav ul li a:hover {
         text-align: center;
     }
 }
+#services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.service {
+    position: relative;
+    width: calc(33.333% - 40px); /* Three per row with gap */
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.service-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #f1f7ee; /* Secondary color */
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service:hover .service-text {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .service {
+        width: calc(50% - 20px); /* Two per row with gap */
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service {
+        width: 100%; /* Full width on small screens */
+        height: 150px;
+    }
+}
+
