@@ -247,3 +247,24 @@ nav ul li a:hover {
     }
 }
 
+/* Scroll to top button styles */
+.scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position:sticky;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100; /* Make sure it stays above other content */
+    background-color: #4e878c; /* Accent 1 */
+    color: #f1f7ee; /* Secondary */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.scrollToTopBtn:hover {
+    background-color: #a05481; /* Accent 2 */
+}
+
