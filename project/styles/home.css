@@ -154,6 +154,9 @@ footer img{
     background-color: #f1f7ee;
     padding: 5px 10px;
 }
+footer img:hover{
+    background-color: #4e878c;
+}
 
 
 

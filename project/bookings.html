@@ -40,6 +40,8 @@
 <script src="scripts/main.js" defer></script>
   <title>Cashlibs City Music</title>
 </head>
+Bookings</title>
+</head>
 <body>
   <nav>
     <a href="index.html"><img src="images/logo.svg" alt="Company logo"></a>
@@ -60,44 +62,75 @@
   
   </nav>
 
- <main>
-  <section id="hero">
-    <picture>
-        <source media="(max-width: 500px)" srcset="images/hero.webp" />
-        <source media="(min-width: 501px) and (max-width: 1200px)" srcset="images/hero.webp" />
-        <source media="(min-width: 1201px)" srcset="images/hero.webp" />
-        <img src="images/hero.webp" alt="Hero image" loading="lazy"/>
-    </picture>
-    <div class="hero-content">
-        <h1>Welcome to <strong>Cashlibs City Music</strong></h1>
-        <h2>We aim to serve as a creative sanctuary where artists, musicians, and producers capture, refine, and immortalize their sonic expressions. It’s a space where melodies, harmonies, and rhythms intertwine, giving birth to timeless compositions.</h2>
-        <a href="#contact" class="cta-button">Book A Session</a>
-    </div>
-  
-</section>
-<h1>Top Clientelle Testimonials</h1>
-  <section id="clientTestimonials">
-    <div class="testimonial">
-        <img src="images/273632618_4887887854625852_3622293801528718570_n.jpg" alt="Client 1">
-        <h2>Nutty O</h2>
-        <p>"Great service! Highly recommend this business."</p>
-    </div>
-    <div class="testimonial">
-        <img src="images/321104798_839333530505329_3644603490379534327_n.jpg" alt="Client 2">
-        <h2>Seh Calaz</h2>
-        <p>"Excellent support and fantastic results."</p>
-    </div>
-    <div class="testimonial">
-      <img src="images/freeman.jpg" alt="Client 3">
-      <h2>Freeman</h2>
-      <p>"Professional and reliable, will definitely return."</p>
-  </div>
-    
-</section>
+    <main>
+        <section id="bookings">
+            <div class="service">
+                <div class="service-info">
+                    <h3>Music Recording</h3>
+                    <p>$35/hr</p>
+                    <button class="cta-button" data-service="Music Recording">Book Now</button>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-info">
+                    <h3>Mixing and Mastering</h3>
+                    <p>$15/hr</p>
+                    <button class="cta-button" data-service="Mixing and Mastering">Book Now</button>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-info">
+                    <h3>Video Recording and Podcasts</h3>
+                    <p>$50/hr</p>
+                    <button class="cta-button" data-service="Video Recording and Podcasts">Book Now</button>
+                </div>
+            </div>
+        </section>
 
-<button id="scrollToTopBtn" class="scrollToTopBtn">Top</button>
-
- </main>
+        <!-- Modal Structure -->
+        <div id="bookingModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3 id="modal-service-title"></h3>
+                <form id="bookingForm">
+                    <input type="hidden" id="serviceType" name="serviceType">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    <button type="submit" class="cta-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
   
+      <section id="social">
+        <a href="https://www.facebook.com/"
+          ><img
+            src="images/facebook.png"
+            alt="facebook Icon by Rakib Hassan Rahim"
+        /></a>
+        <a href="https://www.linkedin.com/in/panasheGonese1"
+          ><img
+            src="images/linkedin.png"
+            alt="linkedin Icon by Rakib Hassan Rahim"
+        /></a>
+        <a href="https://x.com/?lang=en"
+          ><img src="images/twitter.png" alt="twitter Icon by Freepik"
+        /></a>
+      </section>
+      <section id="miei">
+        <p>WDD231 Class Project</p>
+        <p>Farai Confidence Dandara</p>
+        <p>&copy;<span id="full-date"></span> Cashlibs City Music</p>
+        <p id="lastmodified"></p>
+      </section>
+    </footer>
+    <script src="scripts/bookings.js" defer></script>
 </body>
 </html>
