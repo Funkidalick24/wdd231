@@ -168,3 +168,18 @@ iframe{
 h2{
     color: #f1f7ee;
 }
+
+@media (max-width: 786px) {
+    
+        .service,
+        .contact-info {
+          display: block;
+          width: 100%;
+        }
+        
+        .service-item,
+        .contact-item {
+          width: 100%;
+          margin-bottom: 15px;}
+        
+}
