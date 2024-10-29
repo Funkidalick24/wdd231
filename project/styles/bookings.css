@@ -179,6 +179,7 @@ h2{
         
         .service-item,
         .contact-item {
+            display: block;
           width: 100%;
           margin-bottom: 15px;}
         
