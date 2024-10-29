@@ -35,12 +35,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="icon" href="favicon.ico">
-<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/bookings.css">
 <link rel="stylesheet" href="styles/home.css">
-<script src="scripts/main.js" defer></script>
+<script src="scripts/getdates.js" defer></script>
   <title>Cashlibs City Music</title>
-</head>
-Bookings</title>
 </head>
 <body>
   <nav>
@@ -61,77 +59,86 @@ Bookings</title>
     
   
   </nav>
- 
-    <main>
-        <section id="bookings">
-            <div class="service">
-                <div class="service-info">
-                    <h3>Music Recording</h3>
-                    <p>$35/hr</p>
-                    <button class="cta-button" data-service="Music Recording">Book Now</button>
-                </div>
-            </div>
-            <div class="service">
-                <div class="service-info">
-                    <h3>Mixing and Mastering</h3>
-                    <p>$15/hr</p>
-                    <button class="cta-button" data-service="Mixing and Mastering">Book Now</button>
-                </div>
-            </div>
-            <div class="service">
-                <div class="service-info">
-                    <h3>Video Recording and Podcasts</h3>
-                    <p>$50/hr</p>
-                    <button class="cta-button" data-service="Video Recording and Podcasts">Book Now</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Modal Structure -->
-        <div id="bookingModal" class="modal">
-            <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <h3 id="modal-service-title"></h3>
-                <form id="bookingForm">
-                    <input type="hidden" id="serviceType" name="serviceType">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="date">Preferred Date:</label>
-                    <input type="date" id="date" name="date" required>
-                    <label for="time">Preferred Time:</label>
-                    <input type="time" id="time" name="time" required>
-                    <button type="submit" class="cta-button">Submit</button>
-                </form>
-            </div>
-        </div>
-    </main>
-    <button id="scrollToTopBtn" class="scrollToTopBtn">⬆</button>
-    <footer>
   
+  <main>
+      <section id="services">
+      </section>
+      <h2>Contact Information</h2>
+      <section class="contact-info">
+        <div class="directions">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15195.235735470724!2d30.9326318!3d-17.8006746!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a71d2a1aa525%3A0x1b8e79c05cce1361!2sCashlibs%20City%20Music!5e0!3m2!1sen!2szw!4v1730216580791!5m2!1sen!2szw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+        </div>
+        <div class="address">
+          <p>3976 5th street <br>Dzivarasekwa 2 <br> Harare <br> Zimbabwe</p>
+          <p>+263784573569</p>
+        </div>
+      </section>
+  
+      <!-- Modals -->
+      <div id="musicRecordingModal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <form action="thanks_music.html">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required><br>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required><br>
+                  <label for="phone">Phone:</label>
+                  <input type="tel" id="phone" name="phone" required><br>
+                  <input type="submit" value="Book Music Recording">
+              </form>
+          </div>
+      </div>
+  
+      <div id="mixingMasteringModal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <form action="thanks_mixing.html">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required><br>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required><br>
+                  <label for="phone">Phone:</label>
+                  <input type="tel" id="phone" name="phone" required><br>
+                  <input type="submit" value="Book Mixing and Mastering">
+              </form>
+          </div>
+      </div>
+  
+      <div id="videoPodcastModal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <form action="thanks_video.html">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required><br>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required><br>
+                  <label for="phone">Phone:</label>
+                  <input type="tel" id="phone" name="phone" required><br>
+                  <input type="submit" value="Book Video Recording and Podcasts">
+              </form>
+          </div>
+      </div>
+  
+  </main>
+  
+  <button id="scrollToTopBtn" class="scrollToTopBtn">⬆</button>
+  <footer>
       <section id="social">
-        <a href="https://www.facebook.com/"
-          ><img
-            src="images/facebook.png"
-            alt="facebook Icon by Rakib Hassan Rahim"
-        /></a>
-        <a href="https://www.linkedin.com/in/panasheGonese1"
-          ><img
-            src="images/linkedin.png"
-            alt="linkedin Icon by Rakib Hassan Rahim"
-        /></a>
-        <a href="https://x.com/?lang=en"
-          ><img src="images/twitter.png" alt="twitter Icon by Freepik"
-        /></a>
+          <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook Icon"></a>
+          <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedin Icon"></a>
+          <a href="https://x.com/"><img src="images/twitter.png" alt="twitter Icon"></a>
       </section>
       <section id="miei">
-        <p>WDD231 Class Project</p>
-        <p>Farai Confidence Dandara</p>
-        <p>&copy;<span id="full-date"></span> Cashlibs City Music</p>
-        <p id="lastmodified"></p>
+          <p>WDD231 Class Project</p>
+          <p>Farai Confidence Dandara</p>
+          <p>&copy;<span id="full-date"></span> Cashlibs City Music</p>
+          <p id="lastmodified"></p>
       </section>
-    </footer>
-    <script src="scripts/bookings.js" defer></script>
+  </footer>
+  
+  <script src="scripts/bookings.js"></script>
+  
 </body>
 </html>
