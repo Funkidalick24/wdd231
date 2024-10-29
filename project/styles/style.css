@@ -212,13 +212,23 @@ nav ul li a:hover {
         margin-bottom: 10px;
     }
 }
+/* Footer styles */
 footer {
-    gap: 20px;
-    place-items: first baseline;
-  }
-  footer img{
-    width: 40px;
-  }
+    background-color: #050505; /* Primary color */
+    color: #f1f7ee; /* Secondary color */
+    padding: 20px;
+    text-align: center;
+}
+
+footer #social img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+footer #miei p {
+    margin: 5px 0;
+}
+  
   #prevBtn {
     position: absolute;
     left: 10px;
