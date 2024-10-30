@@ -38,6 +38,8 @@
 <link rel="stylesheet" href="styles/bookings.css">
 <link rel="stylesheet" href="styles/home.css">
 <script src="scripts/getdates.js" defer></script>
+<script src="scripts/bookings.js"></script>
+  
   <title>Cashlibs City Music</title>
 </head>
 <body>
@@ -61,7 +63,9 @@
   </nav>
   
   <main>
+    <h2>Book Our Services</h2>
       <section id="services">
+       
       </section>
       <h2>Contact Information</h2>
       <section class="contact-info contact-item" >
@@ -71,7 +75,7 @@
         </div>
         <div class="address">
           <p>3976 5th street <br>Dzivarasekwa 2 <br> Harare <br> Zimbabwe</p>
-          <p>+263784573569</p>
+         <a href="tel:+263784573569">+263784573569</a>
         </div>
       </section>
   
@@ -80,13 +84,16 @@
           <div class="modal-content">
               <span class="close">&times;</span>
               <form action="thanks_music.html">
-                  <label for="name">Name:</label>
+                  <fieldset>
+                    <legend>Music Recording</legend>
+                    <label for="name">Name:</label>
                   <input type="text" id="name" name="name" required><br>
                   <label for="email">Email:</label>
                   <input type="email" id="email" name="email" required><br>
                   <label for="phone">Phone:</label>
                   <input type="tel" id="phone" name="phone" required><br>
-                  <input type="submit" value="Book Music Recording">
+                  <input type="submit" value="Book Now">
+                  </fieldset>
               </form>
           </div>
       </div>
@@ -95,13 +102,16 @@
           <div class="modal-content">
               <span class="close">&times;</span>
               <form action="thanks_mixing.html">
-                  <label for="name">Name:</label>
+                  <fieldset>
+                    <legend>Mixing And Mastering</legend>
+                    <label for="name">Name:</label>
                   <input type="text" id="name" name="name" required><br>
                   <label for="email">Email:</label>
                   <input type="email" id="email" name="email" required><br>
                   <label for="phone">Phone:</label>
                   <input type="tel" id="phone" name="phone" required><br>
-                  <input type="submit" value="Book Mixing and Mastering">
+                  <input type="submit" value="Book Now">
+                  </fieldset>
               </form>
           </div>
       </div>
@@ -110,13 +120,16 @@
           <div class="modal-content">
               <span class="close">&times;</span>
               <form action="thanks_video.html">
-                  <label for="name">Name:</label>
+                  <fieldset>
+                    <legend>Video And Podcasts</legend>
+                    <label for="name">Name:</label>
                   <input type="text" id="name" name="name" required><br>
                   <label for="email">Email:</label>
                   <input type="email" id="email" name="email" required><br>
                   <label for="phone">Phone:</label>
                   <input type="tel" id="phone" name="phone" required><br>
-                  <input type="submit" value="Book Video Recording and Podcasts">
+                  <input type="submit" value="Book Now">
+                  </fieldset>
               </form>
           </div>
       </div>
@@ -138,7 +151,6 @@
       </section>
   </footer>
   
-  <script src="scripts/bookings.js"></script>
-  
+ 
 </body>
 </html>

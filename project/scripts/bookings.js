@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Scroll to top button
     var scrollToTopBtn = document.getElementById('scrollToTopBtn');
     window.addEventListener('scroll', function() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             scrollToTopBtn.style.display = 'block';
         } else {
             scrollToTopBtn.style.display = 'none';

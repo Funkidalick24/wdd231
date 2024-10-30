@@ -16,13 +16,14 @@ body {
 
 /* Navigation styles */
 nav {
-    background-color: #050505; /* Primary */
+    background-color: #050505 50%; /* Primary */
     color: #a05481; /* Secondary */
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    position: fixed;
+
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -174,9 +175,10 @@ nav ul li a:hover {
 
 
 /* Scroll to top button styles */
+
 .scrollToTopBtn {
     display: none; /* Hidden by default */
-    position:sticky;
+    position: sticky;
     bottom: 20px;
     right: 20px;
     z-index: 100; /* Make sure it stays above other content */

@@ -13,7 +13,7 @@ body {
 
 /* Navigation styles */
 nav {
-    background-color: #050505; /* Primary */
+    background-color: #050505 ; /* Primary */
     color: #a05481; /* Secondary */
     padding: 20px;
     display: flex;
@@ -21,7 +21,9 @@ nav {
     justify-content: space-between;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 100;
+    
+
 }
 
 nav img {
@@ -55,6 +57,7 @@ nav ul li a:hover {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    z-index: -1;
 }
 #hero picture,
 #hero img {
@@ -157,7 +160,7 @@ nav ul li a:hover {
 /* Service section styles */
 .service {
     position: relative;
-    width: calc(33.333% - 40px); /* Three per row with gap */
+    width: calc(33.333vw - 40px); /* Three per row with gap */
     height: 200px;
     background-size: cover;
     background-position: center;
@@ -165,7 +168,13 @@ nav ul li a:hover {
     overflow: hidden;
     transition: transform 0.3s ease;
 }
-
+#services{
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 20px;
+        padding: 20px
+}
 .service:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
@@ -188,7 +197,7 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     .service {
-        width: calc(80% - 20px); /* Two per row with gap */
+        width: calc(100% - 20px); /* Two per row with gap */
         height: 200px;
     }
     .service-text {
@@ -273,12 +282,17 @@ nav ul li a:hover {
 /* Show modal button only on mobile */
 @media (max-width: 768px) {
     .mobile-only {
-        display: block;
-        position: absolute;
-        justify-self: center;
+        display:inline;
+        text-align: center;
+      justify-self: center;
+      padding-top: 300px;
+      z-index: 1;
     }
     .meet-the-producer {
         display: none; /* Hide the section on mobile */
+    }
+    #services{
+        display: block;
     }
 }
 
@@ -308,4 +322,7 @@ footer #miei p {
     z-index: 99;
     border: none;
     outline: none;
+}
+h1{
+    justify-self: center;
 }

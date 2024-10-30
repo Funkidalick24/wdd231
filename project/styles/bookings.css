@@ -8,7 +8,7 @@ body {
 
 /* Navigation styles */
 nav {
-    background-color: #050505; /* Primary */
+    background-color: #050505 50%;
     color: #a05481; /* Secondary */
     padding: 20px;
     display: flex;
@@ -17,6 +17,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1000;
+    position: fixed;
 }
 
 nav img {
@@ -48,9 +49,12 @@ main {
     padding: 20px;
     background-color: #050505;
 }
-#services{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+#services
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minmax value as needed */
+        gap: 20px;
+        padding: 20px
 }
 #services .service {
     background-color: #fff;
@@ -65,6 +69,7 @@ main {
 
 .service{
     height: 300px;
+    width: calc(100%-20px);
 }
 .service-info h3 {
     margin: 0;
@@ -90,49 +95,91 @@ main {
 
 
 
-/* Modal styles */
+/* Modal Form Styling */
 .modal {
+    padding-top: 200px;
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     left: 0;
     top: 0;
-    width: 50%;
+    width: 100%;
+    height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    padding-top: 60px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%;
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    color: #050505;
 }
 
-.close {
+.close-button {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 80px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
+.close-button:hover,
+.close-button:focus {
+    color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-/* Footer styles */
-footer {
-    background-color: #050505; /* Primary color */
-    color: #f1f7ee; /* Secondary color */
-    padding: 20px;
-    text-align: center;
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
+form label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="time"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form input:invalid {
+    border-color: red;
+    background-color: #ffe6e6; /* Light red background */
+}
+
+/* Styles for valid inputs */
+form input:valid {
+    border-color: green;
+    background-color: #e6ffe6; /* Light green background */
+}
+form input[type="submit"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4e878c; /* Accent 1 */
+    color: #f1f7ee; /* Secondary */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #a05481; /* Accent 2 */
+}
 footer #social img {
     width: 30px;
     margin: 0 10px;
@@ -167,6 +214,7 @@ iframe{
 }
 h2{
     color: #f1f7ee;
+    justify-self: center;
 }
 
 @media (max-width: 786px) {
@@ -174,13 +222,41 @@ h2{
         .service,
         .contact-info {
           display: block;
-          width: 100%;
+          width: calc(100%-20px);
         }
         
         .service-item,
         .contact-item {
             display: block;
           width: 100%;
-          margin-bottom: 15px;}
+          margin-bottom: 15px;
+        justify-self: center;
+    align-self: center;}
+        iframe{
+            width: calc(100%-30px);
+            justify-self: center;
+            align-self: center;
+        }
         
+        
+}
+
+.scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: sticky;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100; /* Make sure it stays above other content */
+    background-color: #4e878c; /* Accent 1 */
+    color: #f1f7ee; /* Secondary */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.scrollToTopBtn:hover {
+    background-color: #a05481; /* Accent 2 */
 }
