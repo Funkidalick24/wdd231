@@ -19,6 +19,7 @@
 #menu-toggle:checked + .burger + .nav-links {
     display: flex;
     justify-content: space-around;
+    z-index: 1000;
 }
 
 /* Responsive styling */
