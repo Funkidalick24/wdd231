@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f7ee; /* Secondary color */
+    color: #050505; /* Primary color */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #4e878c; /* Accent 1 */
+    padding: 20px;
+    color: #f1f7ee; /* Secondary */
+}
+
+main {
+    padding: 20px;
+}
+
+.thank-you-message {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.thank-you-message h2 {
+    color: #4e878c; /* Accent 1 */
+}
+
+.cta {
+    margin: 20px;
+}
+
+.cta-button {
+    background-color: #4e878c; /* Accent 1 */
+    color: #f1f7ee; /* Secondary */
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #a05481; /* Accent 2 */
+}
+
+footer {
+    background-color: #050505; /* Primary color */
+    color: #f1f7ee; /* Secondary */
+    padding: 10px;
+}
+
+/* Mobile view styling */
+@media only screen and (max-width: 600px) {
+    .thank-you-message {
+        padding: 20px;
+        margin: 10px;
+        max-width: 90%;
+    }
+
+    .cta-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

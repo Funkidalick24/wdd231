@@ -80,59 +80,64 @@
       </section>
   
       <!-- Modals -->
+      <!-- Mixing and Mastering Modal -->
       <div id="musicRecordingModal" class="modal">
-          <div class="modal-content">
-              <span class="close">&times;</span>
-              <form action="thanks.html">
-                  <fieldset>
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="musicRecordingForm" action="thanks.html">
+                <fieldset>
                     <legend>Music Recording</legend>
                     <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required><br>
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required><br>
-                  <label for="phone">Phone:</label>
-                  <input type="tel" id="phone" name="phone" required><br>
-                  <input type="submit" value="Book Now">
-                  </fieldset>
-              </form>
-          </div>
+                    <input type="text" id="nameMusic" name="name" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="emailMusic" name="email" required><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phoneMusic" name="phone" required><br>
+                    <input type="hidden" id="hiddenNameMusic" name="hiddenName">
+                    <input type="submit" value="Book Now">
+                </fieldset>
+            </form>
+        </div>
       </div>
-  
-      <div id="mixingMasteringModal" class="modal">
-          <div class="modal-content">
-              <span class="close">&times;</span>
-              <form action="thanks.html">
-                  <fieldset>
-                    <legend>Mixing And Mastering</legend>
-                    <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required><br>
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required><br>
-                  <label for="phone">Phone:</label>
-                  <input type="tel" id="phone" name="phone" required><br>
-                  <input type="submit" value="Book Now">
-                  </fieldset>
-              </form>
-          </div>
-      </div>
-  
-      <div id="videoPodcastModal" class="modal">
-          <div class="modal-content">
-              <span class="close">&times;</span>
-              <form action="thanks.html">
-                  <fieldset>
-                    <legend>Video And Podcasts</legend>
-                    <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required><br>
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required><br>
-                  <label for="phone">Phone:</label>
-                  <input type="tel" id="phone" name="phone" required><br>
-                  <input type="submit" value="Book Now">
-                  </fieldset>
-              </form>
-          </div>
-      </div>
+<div id="mixingMasteringModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="mixingMasteringForm">
+          <fieldset>
+              <legend>Mixing And Mastering</legend>
+              <label for="name">Name:</label>
+              <input type="text" id="nameMixing" name="name" required><br>
+              <label for="email">Email:</label>
+              <input type="email" id="emailMixing" name="email" required><br>
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phoneMixing" name="phone" required><br>
+              <input type="hidden" id="hiddenNameMixing" name="hiddenName">
+              <input type="submit" value="Book Now">
+          </fieldset>
+      </form>
+  </div>
+</div>
+
+<!-- Video and Podcasts Modal -->
+<div id="videoPodcastModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="videoPodcastForm">
+          <fieldset>
+              <legend>Video And Podcasts</legend>
+              <label for="name">Name:</label>
+              <input type="text" id="nameVideo" name="name" required><br>
+              <label for="email">Email:</label>
+              <input type="email" id="emailVideo" name="email" required><br>
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phoneVideo" name="phone" required><br>
+              <input type="hidden" id="hiddenNameVideo" name="hiddenName">
+              <input type="submit" value="Book Now">
+          </fieldset>
+      </form>
+  </div>
+</div>
+
   
   </main>
   

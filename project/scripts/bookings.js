@@ -111,4 +111,44 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     });
+      
+    
+    
 });
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to handle form submission
+    function handleFormSubmission(formId, hiddenNameId, modalId) {
+        const form = document.getElementById(formId);
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            
+            const name = form.querySelector(`#${hiddenNameId}`).value;
+            form.querySelector(`#${hiddenNameId}`).value = name; // Pass the name to the hidden input
+            
+            // Redirect to the thank you page with the customer's name as a query parameter
+            window.location.href = `thanks.html?name=${encodeURIComponent(name)}`;
+        });
+
+        const modal = document.getElementById(modalId);
+        const closeBtn = modal.querySelector('.close');
+
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    }
+
+    // Handle Mixing and Mastering Form
+    handleFormSubmission('mixingMasteringForm', 'nameMixing', 'mixingMasteringModal');
+
+    // Handle Video and Podcasts Form
+    handleFormSubmission('videoPodcastForm', 'nameVideo', 'videoPodcastModal');
+    handleFormSubmission('musicrecordingForm', 'nameMusic', 'musicRecordingModal');
+});
+

@@ -80,6 +80,7 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
+    z-index: 1000;
 }
 .hero-content h1 {
     font-size: 2.5rem;
@@ -278,16 +279,14 @@ nav ul li a:hover {
 
 .mobile-only {
     display: none;
+    justify-self: center;
 }
 
 /* Show modal button only on mobile */
 @media (max-width: 768px) {
     .mobile-only {
-        display:inline;
-        text-align: center;
-      justify-self: center;
-      padding-top: 600px;
-      z-index: 1000;
+        display:block;
+      
     }
     .meet-the-producer {
         display: none; /* Hide the section on mobile */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You - Cashlibs City Music</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/thanks.css">
 </head>
 <body>
 
@@ -15,14 +15,14 @@
 <main>
     <section class="thank-you-message">
         <h2>We Appreciate Your Booking</h2>
-        <p>Dear,</p>
+        <p>Dear <span id="customerName"></span>,</p>
         <p>Thank you for booking a service with Cashlibs City Music. We are thrilled to help you on your musical journey and can't wait to work with you. Our team will contact you soon to confirm the details of your booking.</p>
-        <p>If you have any questions or need further assistance, feel free to reach out to us at <a href="mailto:faraidandara1@gmail.com">support@cashlibscitymusic.com</a>.</p>
+        <p>If you have any questions or need further assistance, feel free to reach out to us at <a href="mailto:support@cashlibscitymusic.com">support@cashlibscitymusic.com</a>.</p>
         <p>Best Regards,<br>Cashlibs City Music Team</p>
     </section>
     <section class="cta">
         <a href="index.html" class="cta-button">Back to Home</a>
-        <a href="contact.html" class="cta-button">Contact Us</a>
+        <a href="bookings.html" class="cta-button">Contact Us</a>
     </section>
 </main>
 
@@ -30,6 +30,15 @@
     <p>&copy; <span id="year"></span> Cashlibs City Music. All rights reserved.</p>
 </footer>
 
+<script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Extract the customer's name from the URL and display it
+    const urlParams = new URLSearchParams(window.location.search);
+    const customerName = urlParams.get('name');
+    document.getElementById('customerName').textContent = customerName || 'Customer';
+</script>
 
 </body>
 </html>
