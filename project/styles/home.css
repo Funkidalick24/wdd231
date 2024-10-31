@@ -39,6 +39,7 @@
         align-items: center;
         justify-content: space-around;
         padding: 12px;
+        z-index: 1000;
     }
 
     .burger {
