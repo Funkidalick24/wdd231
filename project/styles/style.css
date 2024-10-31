@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Wellfleet&display=swap");
+
+:root{
+    --primary-color: #377771;
+    --secondary-color: #ebe69f;
+    --accent1-color: #CA3C25;
+    --accent2-color: #1D1A05;
+
+    --heading-font: Raleway ;
+    --paragraph-font: kode Mono  ;
+
+    --nav-background-color: #FFFBBD;
+    --nav-link-color: #1D1A05;
+    --nav-hover-link-color: #CA3C25;
+    --nav-hover-background-color: #377771;
+}
 /* Reset and normalize */
 body, h1, h2, p, ul, li, a {
     margin: 0;
@@ -6,24 +23,27 @@ body, h1, h2, p, ul, li, a {
     color: #f1f7ee;
     
 }
-
+h1{
+    font-family: var(--heading-font);
+    justify-self: center;
+}
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--paragraph-font);
     line-height: 1.6;
     background-color: rgb(5, 5, 5)
 }
 
 /* Navigation styles */
 nav {
-    background-color: #050505 50%; /* Primary */
+    background-color: #050505; /* Primary */
     color: #a05481; /* Secondary */
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
-
+    
     top: 0;
     width: 100%;
     z-index: 1000;

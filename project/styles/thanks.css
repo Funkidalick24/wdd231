@@ -1,12 +1,37 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f1f7ee; /* Secondary color */
-    color: #050505; /* Primary color */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Wellfleet&display=swap");
+
+:root{
+    --primary-color: #377771;
+    --secondary-color: #ebe69f;
+    --accent1-color: #CA3C25;
+    --accent2-color: #1D1A05;
+
+    --heading-font: Raleway ;
+    --paragraph-font: kode Mono  ;
+
+    --nav-background-color: #FFFBBD;
+    --nav-link-color: #1D1A05;
+    --nav-hover-link-color: #CA3C25;
+    --nav-hover-background-color: #377771;
+}
+/* Reset and normalize */
+body, h1, h2, p, ul, li, a {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    color: #f1f7ee;
     text-align: center;
+    background-color:#050505;
+    
 }
-
+h1{
+    font-family: var(--heading-font);
+    justify-self: center;
+}
+header h1{
+    background-color:#4e878c;
+}
 header {
     background-color: #4e878c; /* Accent 1 */
     padding: 20px;
@@ -15,10 +40,11 @@ header {
 
 main {
     padding: 20px;
+    background-color: #050505
 }
 
 .thank-you-message {
-    background-color: #fff;
+    background-color: #050505;
     padding: 40px;
     margin: 20px auto;
     border-radius: 10px;
@@ -48,11 +74,7 @@ main {
     background-color: #a05481; /* Accent 2 */
 }
 
-footer {
-    background-color: #050505; /* Primary color */
-    color: #f1f7ee; /* Secondary */
-    padding: 10px;
-}
+
 
 /* Mobile view styling */
 @media only screen and (max-width: 600px) {
@@ -66,4 +88,25 @@ footer {
         width: 100%;
         box-sizing: border-box;
     }
+}
+footer {
+    background-color: #050505; /* Primary color */
+    color: #f1f7ee; /* Secondary color */
+    padding: 20px;
+    text-align: center;
+}
+
+footer #social img {
+    background-color: #f1f7ee;
+    width: 30px;
+    margin: 0 10px;
+}
+footer #social img:hover {
+    background-color:var(--nav-hover-background-color);
+    width: 30px;
+    margin: 0 10px;
+}
+
+footer #miei p {
+    margin: 5px 0;
 }

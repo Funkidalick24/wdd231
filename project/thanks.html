@@ -27,12 +27,20 @@
 </main>
 
 <footer>
-    <p>&copy; <span id="year"></span> Cashlibs City Music. All rights reserved.</p>
+    <section id="social">
+        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook Icon"></a>
+        <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedin Icon"></a>
+        <a href="https://x.com/"><img src="images/twitter.png" alt="twitter Icon"></a>
+    </section>
+    <section id="miei">
+        <p>WDD231 Class Project</p>
+        <p>Farai Confidence Dandara</p>
+        <p>&copy;<span id="full-date"></span> Cashlibs City Music</p>
+        <p id="lastmodified"></p>
+    </section>
 </footer>
 
 <script>
-    // Set current year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
 
     // Extract the customer's name from the URL and display it
     const urlParams = new URLSearchParams(window.location.search);
