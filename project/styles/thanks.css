@@ -5,13 +5,13 @@
     --primary-color: #377771;
     --secondary-color: #ebe69f;
     --accent1-color: #CA3C25;
-    --accent2-color: #1D1A05;
+    --accent2-color: #050505;
 
     --heading-font: Raleway ;
     --paragraph-font: kode Mono  ;
 
     --nav-background-color: #FFFBBD;
-    --nav-link-color: #1D1A05;
+    --nav-link-color: #050505;
     --nav-hover-link-color: #CA3C25;
     --nav-hover-background-color: #377771;
 }
@@ -22,7 +22,7 @@ body, h1, h2, p, ul, li, a {
     box-sizing: border-box;
     color: #f1f7ee;
     text-align: center;
-    background-color:#050505;
+    background-color:var(--accent2-color);
     
 }
 h1{
@@ -30,21 +30,21 @@ h1{
     justify-self: center;
 }
 header h1{
-    background-color:#4e878c;
+    background-color:var(--primary-color);
 }
 header {
-    background-color: #4e878c; /* Accent 1 */
+    background-color: var(--primary-color); /* Accent 1 */
     padding: 20px;
     color: #f1f7ee; /* Secondary */
 }
 
 main {
     padding: 20px;
-    background-color: #050505
+    background-color: var(--accent2-color)
 }
 
 .thank-you-message {
-    background-color: #050505;
+    background-color: var(--accent2-color);
     padding: 40px;
     margin: 20px auto;
     border-radius: 10px;
@@ -61,7 +61,7 @@ main {
 }
 
 .cta-button {
-    background-color: #4e878c; /* Accent 1 */
+    background-color: var(--primary-color); /* Accent 1 */
     color: #f1f7ee; /* Secondary */
     padding: 10px 20px;
     margin: 10px;
@@ -90,7 +90,7 @@ main {
     }
 }
 footer {
-    background-color: #050505; /* Primary color */
+    background-color: var(--accent2-color); /* Primary color */
     color: #f1f7ee; /* Secondary color */
     padding: 20px;
     text-align: center;
