@@ -11,9 +11,6 @@
     height: 3px;
     background-color: #f1f7ee; /* Secondary */
 }
-.burger::before{
-    content: "⌂";
-}
 
 #menu-toggle {
     display: none;
