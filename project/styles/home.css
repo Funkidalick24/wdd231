@@ -11,6 +11,9 @@
     height: 3px;
     background-color: #f1f7ee; /* Secondary */
 }
+.burger::before{
+    content: "⌂";
+}
 
 #menu-toggle {
     display: none;
@@ -19,14 +22,16 @@
 #menu-toggle:checked + .burger + .nav-links {
     display: flex;
     justify-content: space-around;
-    z-index: 1000;
+    
 }
+
 
 /* Responsive styling */
 @media (max-width: 768px) {
     nav{
         padding: 20px;
         gap: 20px;
+        
     }
     .nav-links {
         display: none;

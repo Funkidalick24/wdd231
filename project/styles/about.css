@@ -44,7 +44,7 @@ nav {
     justify-content: space-between;
     top: 0;
     width: 100%;
-    
+    z-index: 1;
     
 
 }
@@ -308,11 +308,12 @@ nav ul li a:hover {
 /* Show modal button only on mobile */
 @media (max-width: 768px) {
     .mobile-only {
-        display:block;
+        display:flex;
         justify-self: center;
         align-self: center;
         text-align: center;
         padding-top: 300px;
+        justify-content: center;
       
     }
     .meet-the-producer {
